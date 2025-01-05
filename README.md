@@ -229,3 +229,26 @@ The complexity of Greffurt stems from its iterative nature and approximation met
 Greffurt's reliance on convergence and precision also means that achieving the desired result often requires careful tuning of parameters (like the number of steps) and close attention to numerical stability. The method's complexity is not just theoretical but also practical, as the real-world implementation of such iterative methods can be computationally expensive or require specific techniques to ensure that errors are minimized.
 
 In summary, Greffurt is complex because it is based on a limit-based iterative approximation. While it can provide highly accurate results, its complexity comes from the need to break down calculations into smaller pieces, handle non-linear behavior, and ensure convergence. This makes Greffurt both a powerful tool and a challenging one to understand, especially when applied to large or small values, where precision becomes paramount.
+
+
+In the Greffurt method, the steps parameter represents the number of intermediate calculations or iterations performed to approximate the result. It is critical that steps is not set to 0 for the following reasons:
+
+1. Division by Zero:
+
+One of the key aspects of the Greffurt method involves dividing by steps. For instance, in the calculation of intermediate target values like T_h = (target * h) / steps, when steps = 0, this leads to division by zero, which is mathematically undefined and will cause a runtime error in most programming languages.
+
+2. Lack of Iteration:
+
+The Greffurt method relies on iterating through a series of intermediate steps to compute values and average them to approximate the result. If steps = 0, this iteration cannot occur because there are no steps to process, resulting in no intermediate values to compute or average. The method would essentially be unable to perform its function.
+
+3. Incomplete Approximation:
+
+The purpose of the steps parameter is to break the problem down into smaller, manageable pieces, allowing for a more refined and accurate result with higher step values. Setting steps = 0 would mean there are no steps to compute, leaving the approximation incomplete or invalid.
+
+4. Inability to Process the Calculation:
+
+As Greffurt involves calculating averages and generating intermediate values between a target and other dynamic values, having zero steps would render the method incapable of performing its intended operations. The iterative process is crucial for generating these intermediate values and without any steps, there would be no way to proceed with the calculation.
+
+Conclusion:
+
+For the Greffurt method to function correctly, the steps parameter must always be a positive integer. Setting it to 0 breaks the mathematical operations and prevents the method from performing its intended calculation, leading to an invalid or undefined result.
