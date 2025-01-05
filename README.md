@@ -54,6 +54,8 @@ The final result of the Greffurt function is obtained by computing the average o
 
 Here, "N" is the total number of intermediary values computed. This gives the final Greffurt value, which represents the target value transformed into a more stable, constant value after passing through all the calculated steps and averages.
 
+if you want to real Greffurt process, look the **greffur.py** file.
+
 Purpose and Functionality:
 
 The purpose of the Greffurt function is to take a target value and transform it into a stable, convergent value. It does this by:
