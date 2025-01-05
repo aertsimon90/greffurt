@@ -24,7 +24,7 @@ def greffurt(target, steps):
 
 # Example usage
 target_value = 100  # Target value you want to stabilize
-steps_value = 100  # Number of steps to break the target into
+steps_value = 1000  # Number of steps to break the target into
 
 result = greffurt(target_value, steps_value)
 print(f"Greffurt result for target {target_value} and {steps_value} steps: {result}")
