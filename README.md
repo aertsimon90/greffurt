@@ -281,3 +281,28 @@ def greffurt(target, steps):
     return greffurt_result
 ```
 
+Example Greffurt processes:
+
+```plain
+Greffurt(-10, 2000) = -8.13
+Greffurt(-9, 2000) = -7.31
+Greffurt(-8, 2000) = -6.5
+Greffurt(-7, 2000) = -5.69
+Greffurt(-6, 2000) = -4.88
+Greffurt(-5, 2000) = -4.06
+Greffurt(-4, 2000) = -3.25
+Greffurt(-3, 2000) = -2.44
+Greffurt(-2, 2000) = -1.63
+Greffurt(-1, 2000) = -0.81
+Greffurt(0, 2000) = 0.0
+Greffurt(1, 2000) = 0.81
+Greffurt(2, 2000) = 1.63
+Greffurt(3, 2000) = 2.44
+Greffurt(4, 2000) = 3.25
+Greffurt(5, 2000) = 4.06
+Greffurt(6, 2000) = 4.88
+Greffurt(7, 2000) = 5.69
+Greffurt(8, 2000) = 6.5
+Greffurt(9, 2000) = 7.31
+Greffurt(10, 2000) = 8.13
+```
