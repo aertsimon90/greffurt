@@ -1,3 +1,5 @@
+![Greffurt Symbol](greffurt.jpg)
+
 The Greffurt function is a mathematical process designed to transform a given target value into a stable, constant value through a series of transformation steps. It works by manipulating the target value in several fractional steps and calculating averages of intermediary values. Greffurt represents a form of convergence, where values gradually stabilize at a certain point based on specific transformations and averages. Below is a detailed and thorough explanation of the Greffurt function, its purpose, and its components.
 
 Visual Representation:
